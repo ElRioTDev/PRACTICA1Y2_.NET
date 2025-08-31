@@ -1,0 +1,23 @@
+@model Proyecto1.Models.Gx
+
+<div class="container mt-4">
+    <h2>@Model.Modelo</h2>
+    <div class="row">
+        <!-- Imagen -->
+        <div class="col-md-6">
+            <img src="@Model.Imagen" class="img-fluid rounded" alt="@Model.Modelo" />
+        </div>
+
+        <!-- Detalles -->
+        <div class="col-md-6">
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Marca:</strong> @Model.Marca</li>
+                <li class="list-group-item"><strong>VRAM:</strong> @Model.VRAM</li>
+                <li class="list-group-item"><strong>Núcleos CUDA:</strong> @Model.NucleosCuda</li>
+                <li class="list-group-item"><strong>Ray Tracing:</strong> @(Model.RayTracing ? "Sí" : "No")</li>
+            </ul>
+
+            <a href="@Url.Action("Index", "Gx")" class="btn btn-secondary mt-3">Volver</a>
+        </div>
+    </div>
+</div>

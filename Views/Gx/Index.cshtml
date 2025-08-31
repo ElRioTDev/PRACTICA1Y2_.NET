@@ -1,0 +1,29 @@
+@using System.ComponentModel.DataAnnotations.Schema
+@model List<Proyecto1.Models.Gx>
+
+<form class="form-inline" method="POST" action="/Gx/Find">
+<div class="form-group mx-sm-3 mb-2">
+    <label class="mr-3">Buscar Grafica</label>
+    <input type="text" class="form-qontrol" required name="gx">
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+</form>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <img src="@item.Imagen" class="card-img-top" alt="....." />
+                    <div class="card-body">
+                        <h5 class="card-title">@item.Modelo</h5>
+                        <p class="card-text">Marca: @item.Marca</p>
+                        <p class="card-text"><small class="text-muted">VRAM: @item.VRAM</small></p>
+                        <a href="@Url.Action("Details", "Gx", new { id = item.Id })" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

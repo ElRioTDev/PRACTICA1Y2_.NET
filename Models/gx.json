@@ -1,0 +1,76 @@
+{
+  "GPUs": [
+    {
+      "Id": 1,
+      "Marca": "NVIDIA",
+      "Modelo": "GeForce RTX 4090",
+      "VRAM": "24 GB GDDR6X",
+      "NucleosCuda": 16384,
+      "RayTracing": true,
+      "Imagen": "https://m.media-amazon.com/images/I/51c1zFDNVmL._AC_SL1003_.jpg"
+    },
+    {
+      "Id": 2,
+      "Marca": "AMD",
+      "Modelo": "Radeon RX 7900 XTX",
+      "VRAM": "24 GB GDDR6",
+      "NucleosCuda": 6144,
+      "RayTracing": true,
+      "Imagen": "https://www.techspot.com/articles-info/2588/images/T_radeon-7900-4.jpg"
+    },
+    {
+      "Id": 3,
+      "Marca": "NVIDIA",
+      "Modelo": "GeForce RTX 4070 Ti",
+      "VRAM": "12 GB GDDR6X",
+      "NucleosCuda": 7680,
+      "RayTracing": true,
+      "Imagen": "https://asset.msi.com/resize/image/global/product/product_1704703822984da48f4e57873dd8ba9f899f1df6ac.png62405b38c58fe0f07fcef2367d8a9ba1/1024.png"
+    },
+    {
+      "Id": 4,
+      "Marca": "AMD",
+      "Modelo": "Radeon RX 7800 XT",
+      "VRAM": "16 GB GDDR6",
+      "NucleosCuda": 4608,
+      "RayTracing": true,
+      "Imagen": "https://www.amd.com/content/dam/amd/en/images/products/graphics/2648997-amd-radeon-7800xt.jpg"
+    },
+    {
+      "Id": 5,
+      "Marca": "NVIDIA",
+      "Modelo": "GeForce RTX 4060",
+      "VRAM": "8 GB GDDR6",
+      "NucleosCuda": 3072,
+      "RayTracing": true,
+      "Imagen": "https://static.gigabyte.com/StaticFile/Image/Global/cfb4f32f66adeaaed4fec68e4b4e4322/Product/40859"
+    },
+    {
+      "Id": 6,
+      "Marca": "AMD",
+      "Modelo": "Radeon RX 7700 XT",
+      "VRAM": "12 GB GDDR6",
+      "NucleosCuda": 3840,
+      "RayTracing": false,
+      "Imagen": "https://www.amd.com/content/dam/amd/en/images/products/graphics/2648997-amd-radeon-7700xt.jpg"
+    },
+    {
+      "Id": 7,
+      "Marca": "NVIDIA",
+      "Modelo": "GeForce GTX 1660 Super",
+      "VRAM": "6 GB GDDR6",
+      "NucleosCuda": 1408,
+      "RayTracing": false,
+      "Imagen": "https://i.blogs.es/a06fc7/nvidia-geforce/840_560.jpg"
+    },
+    {
+      "Id": 8,
+      "Marca": "AMD",
+      "Modelo": "Radeon RX 6600 XT",
+      "VRAM": "8 GB GDDR6",
+      "NucleosCuda": 2048,
+      "RayTracing": false,
+      "Imagen": "https://www.amd.com/content/dam/amd/en/images/products/graphics/2648997-amd-radeon-6600xt.jpg"
+    }
+  ]
+}

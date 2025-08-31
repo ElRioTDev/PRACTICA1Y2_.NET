@@ -1,0 +1,30 @@
+@model Dictionary<string, Proyecto.Models.Gpu>
+
+<h2>Lista de GPUs</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Modelo</th>
+            <th>Lanzamiento</th>
+            <th>Core Clock (MHz)</th>
+            <th>Memoria (GB)</th>
+            <th>TDP (Watts)</th>
+            <th>Precio (USD)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var gpu in Model)
+        {
+            <tr>
+                <td>@gpu.Key</td>
+                <td>@gpu.Value.Model</td>
+                <td>@gpu.Value.Launch</td>
+                <td>@gpu.Value.CoreClockMHz</td>
+                <td>@gpu.Value.MemorySizeGB</td>
+                <td>@gpu.Value.TDPWatts</td>
+                <td>@gpu.Value.ReleasePriceUSD</td>
+            </tr>
+        }
+    </tbody>
+</table>
