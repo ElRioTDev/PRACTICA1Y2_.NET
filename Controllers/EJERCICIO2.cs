@@ -7,10 +7,21 @@ namespace Proyecto1.Controllers;
 public class Ejercicio2 : Controller
 {
 
-    private String[] Cadenas = new string[] {" ","Hola", "Que tal", "Como esta", "Hi", "Hola, Amigos"};
+    private String[] Cadenas = new string[] {"Hola", "Que tal", "Como esta", "Hi", "Hola, Amigos"};
     public String Index(int id)
     {
-        return Cadenas[id];
+        try
+        {
+            if (id <= 4 && id >= 0)
+                return Cadenas[id];
+            else
+                return "Numero invalido";
+                
+        }
+        catch (Exception ex)
+        {
+            return "Error: " + ex.Message;
+        }
     }
 
     public String Comparar(String id)
